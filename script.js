@@ -9,7 +9,7 @@ const coffee = "#6F4E37";
 // Loop through each square
 squares.forEach((sq) => {
   // When mouse enters one square
-  sq.addEventListener("mouseenter", () => {
+  sq.addEventListener("mouseover", () => {
     squares.forEach((otherSq) => {
       if (otherSq !== sq) {
         otherSq.style.backgroundColor = coffee;
@@ -18,7 +18,7 @@ squares.forEach((sq) => {
   });
 
   // When mouse leaves that square
-  sq.addEventListener("mouseleave", () => {
+  sq.addEventListener("mouseout", () => {
     squares.forEach((s) => {
       s.style.backgroundColor = lavender;
     });
